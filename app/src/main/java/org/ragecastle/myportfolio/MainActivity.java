@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button spotifyStreamerButton = (Button) findViewById(R.id.spotify_streamer_button);
+        spotifyStreamerButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,
                         "This button will launch the Spotify Streamer app",
@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
+        Button scoresButton = (Button) findViewById(R.id.scores_button);
+        scoresButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,
                         "This button will launch the Scores app",
@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
+        Button libraryButton = (Button) findViewById(R.id.library_button);
+        libraryButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,
                         "This button will launch the Library app",
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button4 = (Button) findViewById(R.id.button4);
-        button4.setOnClickListener(new View.OnClickListener() {
+        Button buildItBiggerButton = (Button) findViewById(R.id.build_it_bigger_button);
+        buildItBiggerButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,
                         "This button will launch Build It Bigger",
@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button5 = (Button) findViewById(R.id.button5);
-        button5.setOnClickListener(new View.OnClickListener() {
+        Button xyzReaderButton = (Button) findViewById(R.id.xyz_reader_button);
+        xyzReaderButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,
                         "This button will launch the XYZ Reader",
@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button6 = (Button) findViewById(R.id.button6);
-        button6.setOnClickListener(new View.OnClickListener() {
+        Button capstoneButton = (Button) findViewById(R.id.capstone_button);
+        capstoneButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,
                         "This button will launch my capstone app",
