@@ -3,76 +3,43 @@ package org.ragecastle.myportfolio;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button spotifyStreamerButton = (Button) findViewById(R.id.spotify_streamer_button);
-        spotifyStreamerButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,
-                        "This button will launch the Spotify Streamer app",
-                        Toast.LENGTH_LONG)
-                        .show();
-            }
-        });
+    }
 
-        Button scoresButton = (Button) findViewById(R.id.scores_button);
-        scoresButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,
-                        "This button will launch the Scores app",
-                        Toast.LENGTH_LONG)
-                        .show();
-            }
-        });
+    public void onClick(View v){
+        String appName = "";
+        int id = v.getId();
 
-        Button libraryButton = (Button) findViewById(R.id.library_button);
-        libraryButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,
-                        "This button will launch the Library app",
-                        Toast.LENGTH_LONG)
-                        .show();
-            }
-        });
+        switch (id){
+            case R.id.spotify_streamer_button:
+                appName = "Spotify Streamer";
+                break;
+            case R.id.scores_button:
+                appName = "Scores";
+                break;
+            case R.id.library_button:
+                appName = "Library";
+                break;
+            case R.id.build_it_bigger_button:
+                appName = "Build It Bigger";
+                break;
+            case R.id.xyz_reader_button:
+                appName = "XYZ Reader";
+                break;
+            case R.id.capstone_button:
+                appName = "Capstone";
+                break;
+        }
 
-        Button buildItBiggerButton = (Button) findViewById(R.id.build_it_bigger_button);
-        buildItBiggerButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,
-                        "This button will launch Build It Bigger",
-                        Toast.LENGTH_LONG)
-                        .show();
-            }
-        });
-
-        Button xyzReaderButton = (Button) findViewById(R.id.xyz_reader_button);
-        xyzReaderButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,
-                        "This button will launch the XYZ Reader",
-                        Toast.LENGTH_LONG)
-                        .show();
-            }
-        });
-
-        Button capstoneButton = (Button) findViewById(R.id.capstone_button);
-        capstoneButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,
-                        "This button will launch my capstone app",
-                        Toast.LENGTH_LONG)
-                        .show();
-            }
-        });
-
-
+        Toast.makeText(MainActivity.this,"This button will launch the " + appName + " app.", Toast.LENGTH_LONG).show();
     }
 }
