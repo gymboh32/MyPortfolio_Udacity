@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyPortfolio</string>
+    <string name="button_text_1">Spotify Streamer</string>
+    <string name="button_text_2">Scores App</string>
+    <string name="button_text_3">Library App</string>
+    <string name="button_text_4">Build It Bigger</string>
+    <string name="button_text_5">XYZ Reader</string>
+    <string name="button_text_6">Capstone: My Own App</string>
+</resources>
