@@ -18,7 +18,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView"
+        android:id="@+id/scrollView" 
         android:layout_below="@id/textView"
         android:layout_marginTop="31dp">
 
@@ -34,6 +34,7 @@
                 android:id="@+id/spotify_streamer_button" />
 
             <Button
+                style="@android:style/TextAppearance.Material.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/scores_button_text"
@@ -44,6 +45,7 @@
                 android:layout_alignStart="@+id/spotify_streamer_button" />
 
             <Button
+                style="@android:style/TextAppearance.Material.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/library_button_text"
@@ -54,6 +56,7 @@
                 android:layout_alignStart="@+id/scores_button" />
 
             <Button
+                style="@android:style/TextAppearance.Material.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/build_it_bigger_button_text"
@@ -64,6 +67,7 @@
                 android:layout_alignStart="@+id/library_button" />
 
             <Button
+                style="@android:style/TextAppearance.Material.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/xyz_reader_button_text"
@@ -74,6 +78,7 @@
                 android:layout_alignStart="@+id/build_it_bigger_button" />
 
             <Button
+                style="@android:style/TextAppearance.Material.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/capstone_button_text"
